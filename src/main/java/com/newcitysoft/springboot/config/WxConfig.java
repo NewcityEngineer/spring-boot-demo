@@ -47,7 +47,7 @@ public class WxConfig extends JFinalConfig {
 
     @Override
     public void configRoute(Routes routes) {
-        routes.add("/wx/index", WxMsgController.class);
+        routes.add("wx", WxMsgController.class);
     }
 
     @Override

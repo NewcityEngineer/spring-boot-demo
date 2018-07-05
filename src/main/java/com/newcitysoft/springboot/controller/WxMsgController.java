@@ -1,5 +1,6 @@
 package com.newcitysoft.springboot.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.jfinal.weixin.iot.msg.InEquDataMsg;
 import com.jfinal.weixin.iot.msg.InEqubindEvent;
 import com.jfinal.weixin.sdk.jfinal.MsgController;
@@ -35,16 +36,18 @@ import com.jfinal.weixin.sdk.msg.in.event.InVerifyFailEvent;
 import com.jfinal.weixin.sdk.msg.in.event.InVerifySuccessEvent;
 import com.jfinal.weixin.sdk.msg.in.event.InWifiEvent;
 import com.jfinal.weixin.sdk.msg.in.speech_recognition.InSpeechRecognitionResults;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lixin.tian@renren-inc.com
  * @date 2018/7/5 11:38
  */
+@Slf4j
 public class WxMsgController extends MsgController {
 
     @Override
     protected void processInTextMsg(InTextMsg inTextMsg) {
-
+        log.info(JSONObject.toJSONString(inTextMsg));
     }
 
     @Override
