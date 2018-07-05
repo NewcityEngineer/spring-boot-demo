@@ -19,6 +19,9 @@ spring:
         format_sql: false
   freemarker:
     suffix: .html
+  redis:
+      host: codis.fenqi.test.d.xiaonei.com
+      port: 6379
 
 wechat:
   config:
@@ -31,3 +34,4 @@ system:
   corePoolSize: 40
   maxPoolSize: 80
   queueCapacity: 80
+  redisKey: wx
