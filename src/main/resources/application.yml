@@ -19,6 +19,8 @@ spring:
         format_sql: false
   freemarker:
     suffix: .html
+  application:
+    name: spring-boot-demo
 #  redis:
 #      host: codis.fenqi.test.d.xiaonei.com
 #      port: 6379
